@@ -1,6 +1,6 @@
 package com.i3.codechallenge.cards;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import com.i3.codechallenge.cards.model.Card;
@@ -13,7 +13,7 @@ public class CardFactory {
 	 *
 	 */
 	public static List<Card> newDeck() {
-		List<Card> cards = new ArrayList<Card>();
+		List<Card> cards = new LinkedList<Card>();
 		for(Suit suit: Suit.values()) {
 			for(int i = 1; i <= 13; i++) {
 				cards.add(new Card(suit, i));
